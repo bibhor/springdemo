@@ -20,7 +20,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "Greetings from Spring Boot Hello !";
     }
 
     @RequestMapping("/greeting")
@@ -41,7 +41,7 @@ public class HelloController {
         n.setName(name);
         n.setEmail(email);
         userRepository.save(n);
-        return "Saved";
+        return "Saved2";
     }
     
     @GetMapping(path="/all")
